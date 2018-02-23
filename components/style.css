@@ -1,0 +1,326 @@
+
+body {
+	margin: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	;
+  }
+
+*{
+	box-sizing: border-box;
+}
+
+.header{
+	width: 100%;
+ 	padding: 40px 10px;
+	font-size: 26px;
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+ 	letter-spacing: 2px;
+}
+.header span {
+	background-color: #CB202D;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.search {
+ 	text-align: center;
+	padding: 20px 0px;
+	min-height: 150px;
+	margin: 20px 0 0 0 ;
+}
+.search input {
+	width: 350px;
+	border: 1px solid  #ffffff ;
+    border-radius: 4px;
+    font-size: 16px;	
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #ffffff;
+}
+
+::placeholder{
+	color: #c8cdcd;
+}
+.dropdown{
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	margin:20px 0 0 0;
+}
+
+.dropdown-content{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+	margin: 0px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dropdown button {
+	border:none;
+	margin: 0px 0px 0 20px;
+	width: 200px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #CB202D;
+	font-weight: 600;
+	background-color: white;
+  }
+.city_each{
+	padding: 10px;
+	width:200px;
+	font-size: 14px;
+	background-color: white;
+ }
+ .city_each:hover {
+ 	background-color: #CB202D;
+ 	color:white;
+ }
+
+ .dropdown-content input{
+ 	width:200px;
+ 	border-radius:0px;
+ 	background-color:#f2f2f2;
+ }
+
+ .loading{
+ 	width:200px;
+ 	margin:0 auto;
+ 	min-height:200px;
+ 	position:absolute;
+ 	top:0;
+ 	right: 0;
+ 	left: 0;
+ 	bottom: 0;
+ }
+ .restaurent_holder{
+ 	position: relative;
+ 	text-align: center;
+ 	margin: 0 auto;
+ }
+.head {
+ 	font-size: 14px;
+ 	padding: 10px 20px;
+ 	background-color: #f2f2f2;
+ 	color: #CB202D;
+ 	width: 100%;
+ 	margin-bottom: 20px;
+ }
+ .restaurent_card{
+ 	width:380px;
+ 	height:150px;
+ 	margin: 20px 20px;
+ 	padding: 10px;
+ 	display: inline-block;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	box-sizing: content-box;
+ 	overflow: hidden;
+ 	cursor: pointer;
+ }
+ .restaurent_card .content{
+ 	width: 230px;
+ 	height: 150px;
+ 	display: inline-block;
+ 	font-size: 13px;
+ 	text-align: left;
+ 	padding: 0px 15px;
+ 	box-sizing: border-box;
+ }
+ .error{
+ 	color: red;
+ 	text-align: center;
+ 	background-color: #f2f2f2;
+ 	padding: 15px 15px 15px 15px;
+ 	font-size: 14px;
+ }
+.rating{
+	background-color:#CB202D;
+	color: white;
+	padding: 2px 5px;
+	font-size: 12px;
+}
+.address{
+	padding:10px 0px;
+	box-sizing: border-box;
+	overflow: hidden;
+	max-height: 50px;
+ }
+ .general_info {
+ 	text-align: center;
+ 	font-size: 23px;
+  	padding: 30px 0px 20px 0px;	
+  	font-family: Verdana, Geneva, sans-serif;
+  	line-height: 35px;
+ }
+ .center{
+ 	text-align: center;
+ }
+ .list{ 
+ 	padding: 15px;
+ 	display: inline-block;
+ 	line-height: 35px;
+ 	margin-left: 20px;
+ }
+ .key{
+  	width: 100px ; 
+ 	font-size: 16px;
+ 	display: inline-block;
+ }
+  .value{
+ 	min-width: 200px ; 
+ 	font-size: 14px;
+ 	padding-left: 10px;
+ 	display: inline-block;
+ }
+ .value span{
+ 	background-color: #CB202D;
+ 	padding:2px 5px;
+ 	color: white;
+ }
+
+ a , .head .back{
+ 	color: 	#24a8f4;
+ 	font-size: 14px;
+ 	cursor: pointer;
+ }
+ .back{
+ 	padding: 3px 10px 10px 10px;
+ 	display: inline-block;
+ 	float: right;
+ 	font-size: 15px;
+  }
+  .back span{
+ 	font-size: 18px;
+  }
+
+ .feedback{
+ 	padding:20px;
+ }
+
+ .feedback input{
+ 	width: 330px;
+	border: 1px solid  #9d9a9a ;
+    border-radius: 4px;
+    font-size: 16px;	
+    padding: 10px;
+    font-size: 15px; 
+    margin: 10px 0 ;
+ }
+
+ .review_head{
+ 	font-size: 18px;
+ 	margin-bottom: 10px;
+ }
+
+ .feedback button{
+ 	border:none;
+	margin: 10px 0px;
+	width: 150px;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: white;
+	font-weight: 600;
+	background-color: #2ec866;
+ }
+ .underline {
+ 	border-bottom: 1px solid #cb202d3b;
+ 	padding: 10px;
+ 	font-size: 14px;
+ 	line-height: 30px;
+ }
+ .review_rating{
+ 	 background-color:#CB202D;
+ 	 color:white;
+ 	 padding: 1px 5px;
+ }
+ #map{
+ 	width: 300px;
+ 	max-height: 300px;
+ 	margin:0 auto;
+ 	text-align: center;
+ 	padding: 10px;
+ }
+ .hotel_name{
+ 	font-size:17px;
+ 	padding-bottom: 12px;
+ 	max-height: 57px;
+  	overflow: hidden;
+ }
+  .image_card{
+ 	width:200px;
+ 	height:200px;
+ 	margin: 20px 20px;
+ 	display: inline-block;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	box-sizing: content-box;
+ 	overflow: hidden;
+ 	cursor: pointer;
+	border-radius: 50%;
+ }
+.image_card img{
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+}
+ .float_top {
+ 	position: fixed;
+ 	right: 20px;
+ 	bottom: 20px;
+  	width: 45px;
+  	height: 45px;
+  	display: none;
+ 	background-color: #CB202D;
+ 	border-radius: 50%;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	color: white;
+ 	cursor: pointer;
+ 	font-weight: 600;
+ 	padding-top: 6px;
+ 	font-family: cursive;
+ }
+ .float_top:hover {
+ 	background-color: #24a8f4;
+ }
+
+ @media only screen and (max-width: 480px) {
+.restaurent_card{
+ 	width:280px;	
+ 	margin: 12px 10px  0px 10px;
+ 	max-height:120px;
+ }
+ .restaurent_card .content{
+ 	width: 200px;
+ 	height: 120px;
+ }
+ .restaurent_card img{
+ 	width:80px;
+ 	height: 120px;
+ }
+ #restaurant_name {
+	width: 300px;
+ }
+ .general_info{
+ 	font-size: 20px;
+ } 
+ #feedback , #username {
+ 	width: 280px;
+ }
+ .header{
+ 	font-size: 22px;
+ }
+ .key {
+ 	font-size: 14px;
+ 	width: 64px;
+ }
+ .value {
+ 	font-size: 12px;
+ }
+ 
+ .head{
+ 	font-size: 20px;
+ 	padding: 10px;
+ }
+
+}

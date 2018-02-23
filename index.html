@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+   <head>
+      <meta charset = "UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>React App</title>
+      <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link defer rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+      <script  type="text/javascript">
+         
+      $(document).ready(function(){ 
+          $(window).scroll(function(){ 
+              if ($(this).scrollTop() > 100) { 
+                  $('.float_top').fadeIn(); 
+              } else { 
+                  $('.float_top').fadeOut(); 
+              } 
+          }); 
+          $('.float_top').click(function(){ 
+              $("html, body").animate({ scrollTop: 0 }, 600); 
+              return false; 
+          }); 
+      });
+
+      // $(window).bind('beforeunload', function(){
+      //   return '';
+      // });
+
+      </script>
+   </head>
+
+   <body>
+      <div id = "root"></div>
+      <script src ="bundle.js"></script>
+   </body>
+
+</html>
